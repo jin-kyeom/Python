@@ -1,0 +1,40 @@
+1. git download
+    https://git-scm.com/downloads
+2. vscode download
+    https://code.visualstudio.com/download
+
+3. git folder creaste
+    E:\0_Git\Python
+    right click and git bash here
+
+4. local pc ssh connect to github
+    @ git bash 
+    cmd : cd ~/.ssh    
+    cmd : ssh-keygen
+
+    @ ~/.ssh
+    id_rsa.pub 파일 내용 복사 
+
+    @ github setting > SSH and GPG Keys 생성
+    Title : Local pc
+    Key : 복사내용 입력
+
+5. git 설정
+    @ git bash
+    생성폴더로 이동
+    $ cd /c/user/my_project   
+
+    git 초기화
+    $ git init
+
+    git local download
+    $ git clone git@github.com:jin-kyeom/Python.git
+
+    git 작업 후 
+    $ git add . 
+    $ git commit -m "version1"
+    $ git remote -v
+    $ git remote add origin git@github.com:jin-kyeom/Python.git
+    $ git push -u origin master
+
+
